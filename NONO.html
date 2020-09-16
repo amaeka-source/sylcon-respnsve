@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <title>ACC</title>
+  </head>
+  <body>
+	
+    <script type="text/javascript">
+    	jQuery("document").ready(function($){
+		$('.seachicon').click(function() {
+			$('#searchbar').toggleClass('addsearch');
+			$('#searchic').toggleClass('fa-search fa-times');
+		});
+		});
+    </script>
+    
+    <div class="fixed-top header-top-bg">
+	<div class="container">
+    	<div class="row justify-content-center">
+        <div class="col-lg-5">
+        	<div class="row">
+            <div class="col-1"><button class="back-arrow"><i class="fas fa-arrow-left"></i></button>
+            </div>
+            <div class="col-10">
+            	<span id="searchbar"><i class="fas fa-search"></i> <input name="" type="text"> </span>
+              	<h5><font>Page Heading</font></h5>
+                <button class="seachicon"><i id="searchic" class="fas fa-search"></i></button>
+            </div>
+            <div class="col-1"><button id="btn-right" class="right-search"><i id="searchic" class="fas fa-bars"></i></button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <div id="menuholderright" class="menu-contain menu-right-hide">
+        	<button class="close-btn" id="btn-closeright"><i class="far fa-times-circle"></i></button>
+           <div class="innerdiv">
+            <h6>Version : 2.2</h6>
+            <div id="accordion">
+                <div class="card"><!---->
+                <button class="btn btn-link-main" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Heading
+                </button>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <button>Menu Link One</button>
+                <button>Menu Link One</button>
+                <button>Menu Link One</button>
+                </div>
+                </div><!-- end-->
+              	
+                <div class="card"><!---->
+                <button class="btn btn-link-main" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+               Heading 2
+                </button>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <button>Menu Link One</button>
+                <button>Menu Link One</button>
+                <button>Menu Link One</button>
+                </div>
+                </div><!-- end-->
+             </div>
+            
+      </div>
+  </div>
+        
+        <script type="text/javascript">
+$(document).ready(function(){
+ 
+	$('#btn-right').click(function() {
+		$("#menuholderright").removeClass("menu-right");
+		$("#menuholderright").addClass("menu-right-open");
+	});
+	
+	$('#btn-closeright').click(function() {
+		$("#menuholderright").removeClass("menu-right-open");
+		$("#menuholderright").addClass("menu-right");
+		
+	});
+	
+}); 
+</script>
+    
+    
+      <div class="home-delivery top-margin">
+      <div class="container">
+      	  <div class="row justify-content-center">
+          <div class="col-md-5">
+              <div class="row">
+              	  <div class="col-9">
+                  	  <i class="fas fa-map-marker-alt"></i>
+                  	  <h5>Home Delivery</h5>
+                      <h6>To Doha, Al waab</h6>
+                      <img src="img/truck.svg" alt="truck">
+                  </div>
+                  <div class="col-3"><button>Change</button></div>
+              </div>
+          </div>
+          </div>
+      </div>
+      </div>
+      
+      
+      
+    <div class="container single-posts">
+    <div class="row justify-content-center">
+    <div class="col-lg-5">
+    	
+       		<div class="product-images">
+            <div class="row">
+            	<div class="col-12"><div class="star-rating">4.5 <i class="fas fa-star"></i></div><img src="img/product.jpg" alt="product"></div>
+            </div>
+            <div class="row">
+                <div class="col-3"><img src="img/product.jpg" alt="product"></div>
+                <div class="col-3"><img src="img/product.jpg" alt="product"></div>
+                <div class="col-3"><img src="img/product.jpg" alt="product"></div>
+                <div class="col-3"><img src="img/product.jpg" alt="product"></div>
+            </div>
+            </div>
+            
+            <div class="product-desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor gravida orci, in tempor purus auctor ac. Proin luctus justo sed quam vehicula interdum sed non purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor gravida orci, in tempor purus auctor ac. Proin luctus justo sed quam vehicula interdum sed non purus.</p>
+            
+            <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Donec cursus tellus sit amet.</li>
+            <li>Aenean porta dolor eu bibendum.</li>
+            <li>Nulla sed urna sollicitudin.</li>
+            </ul>
+            
+            <h4>MRP : <img src="img/rupee-indian.svg" alt="rupees">11,190/-</h4>
+            </div>
+            
+            <div class="row buyadd-btns">
+            <div class="col-6"><a href="">Buy Now</a></div>
+            <div class="col-6"><a href="">Add to cart</a></div>
+            </div>
+            
+            <div id="accordion" class="product-accordian"><!--accordian-->
+
+  <div class="card">
+    <button type="button" class="card-link" data-toggle="collapse" href="#collapseOne"><font><img src="img/icon-01.png" alt="icon"></font> Features</button>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        	<ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Donec cursus tellus sit amet.</li>
+            <li>Aenean porta dolor eu bibendum.</li>
+            <li>Nulla sed urna sollicitudin.</li>
+            </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <button type="button" class="collapsed card-link" data-toggle="collapse" href="#collapseTwo"><font><img src="img/icon-02.png" alt="icon"></font> Specification</button>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        	<ol>
+            <li><strong>Lorem ipsum :</strong> dolor sit amet.</li>
+            <li><strong>Donec cursus :</strong> tellus sit amet.</li>
+            <li><strong>Aenean porta :</strong> dolor eu bibendum.</li>
+            <li><strong>Nullased :</strong> urna sollicitudin.</li>
+            </ol>
+    </div>
+  </div>
+
+  <div class="card">
+    <button type="button" class="collapsed card-link" data-toggle="collapse" href="#collapseThree"><font><img src="img/icon-03.png" alt="icon"></font> Technology</button>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor gravida orci,</p>
+        	<ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Donec cursus tellus sit amet.</li>
+            <li>Aenean porta dolor eu bibendum.</li>
+            </ul>
+    </div>
+  </div>
+  
+  <div class="card">
+    <button type="button" class="collapsed card-link" data-toggle="collapse" href="#collapseFour"><font><img src="img/icon-04.png" alt="icon"></font> FAQs</button>
+    <div id="collapseFour" class="collapse faqcon" data-parent="#accordion">
+        <h6>1. Lorem ipsum dolor sitamet</h6>
+        <p>Lorem ipsum dolor sitamet consectetur adipiscing elit vivamus eget dictum sapien.</p>
+        
+        <h6>2. Lorem ipsum dolor sitamet</h6>
+        <p>Lorem ipsum dolor sitamet consectetur adipiscing elit vivamus eget dictum sapien.</p>
+        
+        <h6>3. Lorem ipsum dolor sitamet</h6>
+        <p>Lorem ipsum dolor sitamet consectetur adipiscing elit vivamus eget dictum sapien.</p>
+        
+        <h6>4. Lorem ipsum dolor sitamet</h6>
+        <p>Lorem ipsum dolor sitamet consectetur adipiscing elit vivamus eget dictum sapien.</p>
+        
+    </div>
+  </div>
+  
+  <div class="card">
+    <button type="button" class="collapsed card-link" data-toggle="collapse" href="#collapseFive"><font><img src="img/icon-05.png" alt="icon"></font> Customer Reviews</button>
+    <div id="collapseFive" class="collapse" data-parent="#accordion">
+     	<div class="review-item">
+        	<h6><div class="star-rating">4.5 <i class="fas fa-star"></i></div>Posted 3 days ago </h6>
+            <h5>Excellent Product</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor gravida orci, in tempor purus auctor ac.</p>
+        </div>
+        
+        <div class="review-item">
+        	<h6><div class="star-rating">4.5 <i class="fas fa-star"></i></div>Posted 3 days ago </h6>
+            <h5>Excellent Product</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor gravida orci, in tempor purus auctor ac.</p>
+        </div>
+        
+        <div class="review-item">
+        	<h6><div class="star-rating">4.5 <i class="fas fa-star"></i></div>Posted 3 days ago </h6>
+            <h5>Excellent Product</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor gravida orci, in tempor purus auctor ac.</p>
+        </div>
+        
+        <div class="review-item">
+        	<h6><div class="star-rating">4.5 <i class="fas fa-star"></i></div>Posted 3 days ago </h6>
+            <h5>Excellent Product</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor gravida orci, in tempor purus auctor ac.</p>
+        </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <button type="button" class="collapsed card-link" data-toggle="collapse" href="#collapseSix"><font><img src="img/icon-06.png" alt="icon"></font> Write a Review</button>
+    <div id="collapseSix" class="collapse write-review" data-parent="#accordion">
+        <textarea name="" cols="" rows="" placeholder="Enter Review"></textarea>
+        <button class="reviewbtn">SUBMIT</button>
+    </div>
+  </div>
+
+</div><!--accordian end-->
+        
+    </div>
+    </div>
+    </div>
+      
+ 	  <div class="fixed-bottom footer-wrapper">
+      <div class="container">
+        	<div class="row justify-content-center">
+            	<div class="col-lg-5">
+                <div class="row">
+                	<a href="" class="col-3"><i class="fas fa-home"></i> <span>Home</span></a>
+                    <a href="" class="col-3"><i class="fas fa-tint"></i> <span>Products</span></a>
+                    <a href="" class="col-3"><i class="fas fa-shopping-cart"></i> <span>Cart</span></a>
+                    <a href="" class="col-3"><i class="far fa-user-circle"></i> <span>Profile</span></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+</body>
+</html>

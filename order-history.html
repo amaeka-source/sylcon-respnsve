@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <title>Order History</title>
+  </head>
+  <body>
+  
+    <script type="text/javascript">
+      jQuery("document").ready(function($){
+    $('.seachicon').click(function() {
+      $('#searchbar').toggleClass('addsearch');
+      $('#searchic').toggleClass('fa-search fa-times');
+    });
+    });
+    </script>
+    
+    <div class="fixed-top top-head">
+  <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 col-sm-5">
+          <div class="row">
+            <div class="col-1">
+              <button class="back-arrow"><img src="pic/back-icon.svg"></button>
+            </div>
+            <div class="col-10">
+              <span id="searchbar"><i class="fas fa-search"></i> <input name="" type="text"> </span>
+                <h5><font style="color: #006667;">Order History</font></h5>
+                
+            </div>
+            <div class="col-1">
+              
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    
+   
+        
+        <script type="text/javascript">
+$(document).ready(function(){
+ 
+  $('#btn-right').click(function() {
+    $("#menuholderright").removeClass("menu-right");
+    $("#menuholderright").addClass("menu-right-open");
+  });
+  
+  $('#btn-closeright').click(function() {
+    $("#menuholderright").removeClass("menu-right-open");
+    $("#menuholderright").addClass("menu-right");
+    
+  });
+  
+}); 
+</script>
+    
+   <div class="top-s-space"></div>
+    
+      <div class=" top-margin">
+      <div class="container">
+          <div class="row justify-content-center">
+          <div class="col-lg-12 col-sm-5">
+              <div class="row">
+                  <div class="col-md-12">
+                    <div class="container">
+                      <div class="tab">
+                        <button class="tablinks order-history-active" onclick="openCity(event, 'London')" id="defaultOpen">Active</button>
+                        <button class="tablinks order-history-reoder" onclick="openCity(event, 'Paris')">Past order</button>
+                      </div>
+                    </div>
+                    <div id="London" class="tabcontent">
+                      <div class="order-history" style="border-bottom: 1px solid #ccc;">
+                            <div class="row">
+                              <div class="col-md-6">
+                                  <h6>Thu, 25 Jun, 2020</h6>
+                                    <p>
+                                      Order #125325698
+                                    </p>
+                              </div>
+                                  <div class="col-md-6 history-price">
+                                      <a href="">`180.00</a>
+                                  </div>
+
+                              <div class="col-md-12">
+                                <div class="">
+                                    <div class="">
+                                      <div class="row">
+                                        <div class="col-md-1">
+                                      <img src="pic/basket.png">
+                                    </div>
+                                        <div class="col-md-11">
+                                          <p>
+                                  Maggi Masala `20 (2), Fresh Mango (1kg), Wheat (2kg), Chicken Egg (10pcs) Coconut Oil 500ltr (1pack)</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  <div class="row dlvry-area">
+                                    <img src="pic/dlvry.png">
+                                    <p>&nbsp;Out of delivery</p>  
+                                  </div>
+                                </div>
+
+                                 <div class="order-history-btn">
+                                   <button>Cancel Order</button>
+                                   <button>Track your Order</button>
+                                 </div>
+                              </div>
+                                            
+                            </div>
+                        </div>
+
+                        <div class="order-history">
+                            <div class="row">
+                              <div class="col-md-6">
+                                  <h6>Thu, 25 Jun, 2020</h6>
+                                    <p>
+                                      Order #125325698
+                                    </p>
+                              </div>
+                                  <div class="col-md-6 history-price">
+                                      <a href="">`180.00</a>
+                                  </div>
+
+                              <div class="col-md-12">
+                                <div class="">
+                                    <div class="">
+                                      <div class="row">
+                                        <div class="col-md-1">
+                                      <img src="pic/basket.png">
+                                    </div>
+                                        <div class="col-md-11">
+                                          <p>
+                                  Maggi Masala `20 (2), Fresh Mango (1kg), Wheat (2kg), Chicken Egg (10pcs) Coconut Oil 500ltr (1pack)</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  <div class="row dlvry-area">
+                                    <img src="pic/dlvry.png">
+                                    <p>&nbsp;Out of delivery</p>  
+                                  </div>
+                                </div>
+
+                                 <div class="order-history-btn">
+                                   <button>Cancel Order</button>
+                                   <button disabled="disabled">Track your Order</button>
+                                 </div>
+                              </div>
+                                            
+                            </div>
+                        </div>
+                    </div>
+
+            <div id="Paris" class="tabcontent">
+                <div class="order-history" style="border-bottom: 1px solid #ccc;">
+                            <div class="row">
+                              <div class="col-md-6">
+                                  <h6>Thu, 25 Jun, 2020</h6>
+                                    <p>
+                                      Order #125325698
+                                    </p>
+                              </div>
+                                  <div class="col-md-6 history-price">
+                                      <a href="">`180.00</a>
+                                  </div>
+
+                              <div class="col-md-12">
+                                <div class="">
+                                    <div class="">
+                                      <div class="row">
+                                        <div class="col-md-1">
+                                      <img src="pic/basket.png">
+                                    </div>
+                                        <div class="col-md-11">
+                                          <p>
+                                  Maggi Masala `20 (2), Fresh Mango (1kg), Wheat (2kg), Chicken Egg (10pcs) Coconut Oil 500ltr (1pack)</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  <div class="row dlvry-area">
+                                    <img src="pic/dlvry.png">
+                                    <p>&nbsp;Out of delivery</p>  
+                                  </div>
+                                </div>
+
+                                 <div class="order-history-btn">
+                                   <button disabled="disabled">Ask Refund</button>
+                                   <button>Reorder Items</button>
+                                 </div>
+                              </div>
+                                            
+                            </div>
+                        </div>
+
+                        <div class="order-history">
+                            <div class="row">
+                              <div class="col-md-6">
+                                  <h5>Thu, 25 Jun, 2020</h5>
+                                    <p>
+                                      Order #125325698
+                                    </p>
+                              </div>
+                                  <div class="col-md-6 history-price">
+                                      <a href="">`180.00</a>
+                                  </div>
+
+                             <div class="col-md-12">
+                                <div class="">
+                                    <div class="">
+                                      <div class="row">
+                                        <div class="col-md-1">
+                                      <img src="pic/basket.png">
+                                    </div>
+                                        <div class="col-md-11">
+                                          <p>
+                                  Maggi Masala `20 (2), Fresh Mango (1kg), Wheat (2kg), Chicken Egg (10pcs) Coconut Oil 500ltr (1pack)</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  <div class="row dlvry-area">
+                                    <img src="pic/dlvry.png">
+                                    <p>&nbsp;Out of delivery</p>  
+                                  </div>
+                                </div>
+
+                                 <div class="order-history-btn">
+                                   <button>Order Cancelled</button>
+                                   <button>Reorder Items</button>
+                                 </div>
+                              </div>
+                                            
+                            </div>
+                        </div>
+              </div>
+                   
+                  </div>
+              </div>
+               
+              </div>
+          </div>
+          </div>
+      </div>
+      </div>
+      
+      
+      
+    <div class="container single-posts">
+    <div class="row justify-content-center">
+    <div class="col-lg-5">
+
+
+</div><!--accordian end-->
+        
+    </div>
+    </div>
+    </div>
+      
+    <div class="fixed-bottom footer-wrapper">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-12 col-sm-5">
+                <div class="row footer-icons">
+                  <a href="" class="col-3"><img src="pic/home.png"></a>
+                    <a href="" class="col-3"><img src="pic/categories-y.png"></a>
+                    <a href="" class="col-3"><img src="pic/cart nav.png"></a>
+                    <a href="" class="col-3"><img src="pic/user.png"></a>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+</body>
+</html>

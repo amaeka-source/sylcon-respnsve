@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <title>ACC</title>
+  </head>
+  <body>
+	
+    <script type="text/javascript">
+    	jQuery("document").ready(function($){
+		$('.seachicon').click(function() {
+			$('#searchbar').toggleClass('addsearch');
+			$('#searchic').toggleClass('fa-search fa-times');
+		});
+		});
+    </script>
+    
+    <div class="fixed-top header-top-bg">
+	<div class="container">
+    	<div class="row justify-content-center">
+        <div class="col-lg-5">
+        	<div class="row">
+            <div class="col-1"><button class="back-arrow"><i class="fas fa-arrow-left"></i></button>
+            </div>
+            <div class="col-10">
+            	<span id="searchbar"><i class="fas fa-search"></i> <input name="" type="text"> </span>
+              	<h5><font>Page Heading</font></h5>
+                <button class="seachicon"><i id="searchic" class="fas fa-search"></i></button>
+            </div>
+            <div class="col-1"><button id="btn-right" class="right-search"><i id="searchic" class="fas fa-bars"></i></button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <div id="menuholderright" class="menu-contain menu-right-hide">
+        	<button class="close-btn" id="btn-closeright"><i class="far fa-times-circle"></i></button>
+           <div class="innerdiv">
+            <h6>Version : 2.2</h6>
+            <div id="accordion">
+                <div class="card"><!---->
+                <button class="btn btn-link-main" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Heading
+                </button>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <button>Menu Link One</button>
+                <button>Menu Link One</button>
+                <button>Menu Link One</button>
+                </div>
+                </div><!-- end-->
+              	
+                <div class="card"><!---->
+                <button class="btn btn-link-main" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+               Heading 2
+                </button>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <button>Menu Link One</button>
+                <button>Menu Link One</button>
+                <button>Menu Link One</button>
+                </div>
+                </div><!-- end-->
+             </div>
+            
+      </div>
+  </div>
+        
+        <script type="text/javascript">
+$(document).ready(function(){
+ 
+	$('#btn-right').click(function() {
+		$("#menuholderright").removeClass("menu-right");
+		$("#menuholderright").addClass("menu-right-open");
+	});
+	
+	$('#btn-closeright').click(function() {
+		$("#menuholderright").removeClass("menu-right-open");
+		$("#menuholderright").addClass("menu-right");
+		
+	});
+	
+}); 
+</script>
+    
+    
+      <div class="home-delivery top-margin">
+      <div class="container">
+      	  <div class="row justify-content-center">
+          <div class="col-md-5">
+              <div class="row">
+              	  <div class="col-9">
+                  	  <i class="fas fa-map-marker-alt"></i>
+                  	  <h5>Home Delivery</h5>
+                      <h6>To Doha, Al waab</h6>
+                      <img src="img/truck.svg" alt="truck">
+                  </div>
+                  <div class="col-3"><button>Change</button></div>
+              </div>
+          </div>
+          </div>
+      </div>
+      </div>
+      
+      
+      
+    <div class="container homepage-con pagelist-con">
+    <div class="row justify-content-center">
+    	
+        <div class="col-6 col-md-3">
+        <button class="user-home-btn">
+        	<img src="img/profile.svg" alt="profile">
+        	<h6>Profile</h6>
+        </button>
+        </div>
+        
+        <div class="col-6 col-md-3">
+        <button class="user-home-btn">
+        	<img src="img/booking-history.svg" alt="profile">
+        	<h6>Booking History</h6>
+        </button>
+        </div>
+        
+        <div class="col-6 col-md-3">
+        <button class="user-home-btn">
+        	<img src="img/logout.svg" alt="profile">
+        	<h6>Logout</h6>
+        </button>
+        </div>
+        
+    </div>
+    </div>
+      
+ 	  <div class="fixed-bottom footer-wrapper">
+      <div class="container">
+        	<div class="row justify-content-center">
+            	<div class="col-lg-5">
+                <div class="row">
+                	<a href="" class="col-3"><i class="fas fa-home"></i> <span>Home</span></a>
+                    <a href="" class="col-3"><i class="fas fa-tint"></i> <span>Products</span></a>
+                    <a href="" class="col-3"><i class="fas fa-shopping-cart"></i> <span>Cart</span></a>
+                    <a href="" class="col-3"><i class="far fa-user-circle"></i> <span>Profile</span></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+</body>
+</html>

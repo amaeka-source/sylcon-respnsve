@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <title>Product inner</title>
+  </head>
+  <body>
+  
+    <script type="text/javascript">
+      jQuery("document").ready(function($){
+    $('.seachicon').click(function() {
+      $('#searchbar').toggleClass('addsearch');
+      $('#searchic').toggleClass('fa-search fa-times');
+    });
+    });
+    </script>
+    
+      
+        <script type="text/javascript">
+          $(document).ready(function(){
+           
+            $('#btn-right').click(function() {
+              $("#menuholderright").removeClass("menu-right");
+              $("#menuholderright").addClass("menu-right-open");
+            });
+            
+            $('#btn-closeright').click(function() {
+              $("#menuholderright").removeClass("menu-right-open");
+              $("#menuholderright").addClass("menu-right");
+              
+            });
+            
+          }); 
+      </script>
+    
+   <div class="top-sss-space"></div>
+    
+      <div class=" top-margin">
+      <div class="container">
+          <div class="row justify-content-center">
+          <div class="col-md-5">
+              <div class="row">
+                <div class="container">
+                  <div class="filter">
+                      <div class="row">
+                        <div class="col-md-4">
+                        <img src="pic/close.png">
+                      </div>
+                      <div class="col-md-4">
+                        <h5><font>Filter</font></h5>
+                      </div>  
+                       <div class="col-md-4">
+                         <p>Reset</p>
+                       </div> 
+                      </div>
+
+                      <div class="filters">
+                        <form action="/action_page.php">
+                        <label for="filters">Sort by &nbsp;&nbsp;</label>
+                        <select name="filters" id="filters">
+                            <option value="popularity">Popularity</option>
+                            <option value="price-low">Price low to high</option>
+                            <option value="price-high">Price high to low</option>
+                            <option value="discounts">Discounts</option>
+                        </select>
+                      </form>
+                      </div>
+                      <p>Price Range</p>
+
+                    <div class="slidecontainer">              
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+
+                    <p style="font-size: 20px;">`10.00</p>
+
+                <button class="accordion">All Categories</button>
+                  <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+
+                <button class="accordion">Discounts</button>
+                  <div class="panel">
+                    <a href=""><p>50% above</p></a><br>
+                    <a href=""><p>40%</p></a><br>
+                    <a href=""><p>30%</p></a><br>
+                    <a href=""><p>20%</p></a><br>
+
+                  </div>
+
+                <button class="accordion">Customer Ratings</button>
+                  <div class="panel">
+                    <a href=""><p>4.5 above</p></a><br>
+                    <a href=""><p>3.5</p></a><br>
+                    <a href=""><p>2.5</p></a><br>
+                  </div>
+
+                  <button class="accordion">Brands</button>
+                  <div class="panel">
+                    <a href=""><p>brand1</p></a><br>
+                    <a href=""><p>brand2</p></a><br>
+                    <a href=""><p>brand3</p></a><br>
+                    <a href=""><p>brand4</p></a><br>
+
+                  </div>
+
+                  </div>
+                </div>
+               
+              </div>
+          </div>
+          </div>
+      </div>
+      </div>
+      
+      
+      
+    <div class="container single-posts">
+    <div class="row justify-content-center">
+    <div class="col-lg-5">
+
+
+</div><!--accordian end-->
+        
+    </div>
+    </div>
+    </div>
+      
+    <div class="fixed-bottom footer-wrapper">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-5">
+                <div class="row footer-icons">
+                  <a href="" class="col-3"><img src="pic/home.png"></a>
+                    <a href="" class="col-3"><img src="pic/categories-y.png"></a>
+                    <a href="" class="col-3"><img src="pic/cart nav.png"></a>
+                    <a href="" class="col-3"><img src="pic/user.png"></a>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
